@@ -71,6 +71,21 @@
       "type": "boolean",
       "default": false
     },
+    "utmSource": {
+      "type": "string"
+    },
+    "utmMedium": {
+      "type": "string"
+    },
+    "utmCampaign": {
+      "type": "string"
+    },
+    "utmTerm": {
+      "type": "string"
+    },
+    "utmContent": {
+      "type": "string"
+    },
     "prospect": {
       "type": "relation",
       "relation": "oneToOne",

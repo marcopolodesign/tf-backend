@@ -481,6 +481,11 @@ export interface ApiLeadLead extends Schema.CollectionType {
     updatedBy: Attribute.Relation<'api::lead.lead', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     user: Attribute.Relation<'api::lead.lead', 'oneToOne', 'api::user.user'>;
+    utmCampaign: Attribute.String;
+    utmContent: Attribute.String;
+    utmMedium: Attribute.String;
+    utmSource: Attribute.String;
+    utmTerm: Attribute.String;
   };
 }
 
@@ -582,6 +587,11 @@ export interface ApiProspectProspect extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
+    utmCampaign: Attribute.String;
+    utmContent: Attribute.String;
+    utmMedium: Attribute.String;
+    utmSource: Attribute.String;
+    utmTerm: Attribute.String;
   };
 }
 
@@ -693,6 +703,11 @@ export interface ApiUserUser extends Schema.CollectionType {
     updatedAt: Attribute.DateTime;
     updatedBy: Attribute.Relation<'api::user.user', 'oneToOne', 'admin::user'> &
       Attribute.Private;
+    utmCampaign: Attribute.String;
+    utmContent: Attribute.String;
+    utmMedium: Attribute.String;
+    utmSource: Attribute.String;
+    utmTerm: Attribute.String;
   };
 }
 
